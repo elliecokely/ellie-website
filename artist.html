@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellie Aughtman - Artist Info</title>
+    <style>
+        /* Y2K-inspired CSS (mostly the same as index.html) */
+        body {
+            font-family: "Comic Sans MS", cursive;
+            background-color: #FFD700;
+            color: #FF1493;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/background.gif');
+            cursor: url('images/pixel-star.png'), auto;
+        }
+        
+        #container {
+            width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 5px solid #00CED1;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #FF69B4;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #FF69B4;
+            border-bottom: 5px solid #00CED1;
+        }
+        
+        h1 {
+            font-size: 48px;
+            color: #FFFF00;
+            text-shadow: 2px 2px #FF1493;
+            margin: 0;
+        }
+        
+        nav {
+            background-color: #00CED1;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            background-color: #FF1493;
+            border: 2px solid #FFFF00;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #FFFF00;
+            color: #FF1493;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        /* New styles for artist page */
+        .artist-info {
+            background-color: rgba(255, 105, 180, 0.3);
+            border: 3px dashed #00CED1;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .artist-info h2 {
+            color: #00CED1;
+            text-align: center;
+            font-size: 36px;
+            margin-top: 0;
+            text-shadow: 1px 1px #FF1493;
+        }
+        
+        .artist-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .pixel-divider {
+            height: 5px;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH6AoJBQ0uMD91vwAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAQUlEQVQY052PMQ4AIAgDuf8xqMHwUQeN0RGTWJ0sUgRmBMuAqkyWbuk3HJ0p1EEVoVj+PK2Uq8X/khSUAjcjGU8HbLMoS7jmHfQAAAAASUVORK5CYII=');
+            background-repeat: repeat-x;
+            margin: 20px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #FF69B4;
+            color: #FFFF00;
+            font-size: 12px;
+            border-top: 5px solid #00CED1;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            #container {
+                width: 100%;
+            }
+            
+            h1 {
+                font-size: 36px;
+            }
+            
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+            
+            .artist-info h2 {
+                font-size: 28px;
+            }
+            
+            .artist-info p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Ellie Aughtman</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="artist.html">Artist Info</a>
+            <a href="tour.html">Tour Dates</a>
+            <a href="guestbook.html">Guestbook</a>
+        </nav>
+        <main>
+            <div class="artist-info">
+                <h2>About Ellie</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor.
+                </p>
+            </div>
+            <div class="pixel-divider"></div>
+            <div class="artist-info">
+                <h2>Ellie's Music</h2>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </main>
+        <footer>
+            &copy; 2024 Ellie Aughtman | Best viewed in Netscape Navigator
+        </footer>
+    </div>
+</body>
+</html>
