@@ -1,0 +1,12 @@
+# macOS system files
+.DS_Store
+
+# Logs
+*.log
+
+# Node.js dependencies (if you use Node later on)
+node_modules/
+
+# Ignore anything from temp or cache folders
+temp/
+cache/

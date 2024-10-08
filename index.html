@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellie Aughtman - Y2K Vibes</title>
+    <style>
+        /* Y2K-inspired CSS */
+        body {
+            font-family: "Comic Sans MS", cursive;
+            background-color: #FFD700;
+            color: #FF1493;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/background.gif');
+            cursor: url('images/pixel-star.png'), auto;
+        }
+        
+        #container {
+            width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 5px solid #00CED1;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #FF69B4;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #FF69B4;
+            border-bottom: 5px solid #00CED1;
+        }
+        
+        h1 {
+            font-size: 48px;
+            color: #FFFF00;
+            text-shadow: 2px 2px #FF1493;
+            margin: 0;
+        }
+        
+        nav {
+            background-color: #00CED1;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            background-color: #FF1493;
+            border: 2px solid #FFFF00;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #FFFF00;
+            color: #FF1493;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        #welcome-message {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .cd-graphic {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background-image: url('images/cd.png');
+            background-size: cover;
+            animation: spin 5s linear infinite;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #FF69B4;
+            color: #FFFF00;
+            font-size: 12px;
+            border-top: 5px solid #00CED1;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            #container {
+                width: 100%;
+            }
+            
+            h1 {
+                font-size: 36px;
+            }
+            
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Ellie Aughtman</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="artist.html">Artist Info</a>
+            <a href="tour.html">Tour Dates</a>
+            <a href="guestbook.html">Guestbook</a>
+        </nav>
+        <main>
+            <div id="welcome-message"></div>
+            <div class="cd-graphic"></div>
+        </main>
+        <footer>
+            &copy; 2024 Ellie Aughtman | Best viewed in Netscape Navigator
+        </footer>
+    </div>
+    <script>
+        // Typing effect for welcome message
+        const welcomeMessage = "Welcome to my totally rad Y2K website!";
+        let i = 0;
+        function typeWriter() {
+            if (i < welcomeMessage.length) {
+                document.getElementById("welcome-message").innerHTML += welcomeMessage.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        typeWriter();
+    </script>
+</body>
+</html>
