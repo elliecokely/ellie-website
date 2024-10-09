@@ -13,6 +13,7 @@
             margin: 0;
             padding: 0;
             background-image: url('images/background.gif');
+            background-size: cover;
             cursor: url('images/pixel-star.png'), auto;
         }
         
@@ -79,6 +80,7 @@
             background-image: url('images/cd.png');
             background-size: cover;
             animation: spin 5s linear infinite;
+            alt: "Spinning CD graphic";
         }
         
         @keyframes spin {
@@ -94,73 +96,76 @@
             font-size: 12px;
             border-top: 5px solid #00CED1;
         }
-        
+
+        .secret-section {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #FFD700;
+            border: 5px solid #00CED1;
+            border-radius: 10px;
+            box-shadow: 5px 5px 0px #FF1493;
+        }
+
+        .secret-message {
+            font-size: 18px;
+            color: #FF1493;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 1px 1px #00CED1;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .social-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #FFFFFF;
+            background-color: #FF69B4;
+            border: 3px solid #00CED1;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .social-button:hover {
+            background-color: #00CED1;
+            color: #FFFF00;
+            border-color: #FF69B4;
+            transform: scale(1.05);
+        }
+
         /* Mobile responsiveness */
         @media (max-width: 600px) {
             #container {
                 width: 100%;
             }
-            
+
             h1 {
                 font-size: 36px;
             }
-            
+
             nav a {
                 display: block;
                 margin: 5px 0;
             }
-            
-    .secret-section {
-        width: 50%;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #FFD700;
-        border: 5px solid #00CED1;
-        border-radius: 10px;
-        box-shadow: 5px 5px 0px #FF1493;
-    }
 
-    .secret-message {
-        font-size: 18px;
-        color: #FF1493;
-        text-align: center;
-        margin-bottom: 20px;
-        font-weight: bold;
-        text-shadow: 1px 1px #00CED1;
-    }
+            .secret-section {
+                width: 90%;
+            }
 
-    .social-buttons {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .social-button {
-        padding: 10px 20px;
-        font-size: 16px;
-        font-weight: bold;
-        color: #FFFFFF;
-        background-color: #FF69B4;
-        border: 3px solid #00CED1;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 0.3s;
-    }
-
-    .social-button:hover {
-        background-color: #00CED1;
-        color: #FFFF00;
-        border-color: #FF69B4;
-        transform: scale(1.05);
-    }
-
-    @media (max-width: 600px) {
-        .secret-section {
-            width: 90%;
+            .social-button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
         }
-    }
 
-
-        }
     </style>
 </head>
 <body>
@@ -171,11 +176,17 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="artist.html">Artist Info</a>
-    
         </nav>
         <main>
             <div id="welcome-message"></div>
             <div class="cd-graphic"></div>
+            <div class="secret-section">
+                <p class="secret-message">Whatever you do, DO NOT click either of those buttons. I promise neither of them link to my social media or music!</p>
+                <div class="social-buttons">
+                    <a href="https://www.tiktok.com/@ellieaughtman" target="_blank" class="social-button">TikTok</a>
+                    <a href="https://www.instagram.com/ellieaughtman" target="_blank" class="social-button">Insta</a>
+                </div>
+            </div>
         </main>
         <footer>
             &copy; 2024 Ellie Aughtman
@@ -194,12 +205,5 @@
         }
         typeWriter();
     </script>
-    <div class="secret-section">
-        <p class="secret-message">Whatever you do, DO NOT click either of those buttons. I promise neither of them link to my social media or music!</p>
-        <div class="social-buttons">
-            <a href="https://www.tiktok.com/@ellieaughtman" target="_blank" class="social-button">TikTok</a>
-            <a href="https://www.instagram.com/ellieaughtman" target="_blank" class="social-button">Insta</a>
-        </div>
-    </div>
 </body>
 </html>
